@@ -24,19 +24,23 @@ const headerLinks = [
   },
 ]
 
-export const Header = () => {
+interface HeaderProps {
+  className: string
+}
+
+export const Header = ({ className }: HeaderProps) => {
   const path = usePathname()
 
   return (
     <>
-      <div className="flex justify-between items-center p-2 lg:hidden">
+      <div className={cn('flex justify-between items-center p-2 lg:hidden right-0', className)}>
         <div className="flex flex-col items-start text-sm">
           <p className="text-[#717171]">Hellom my name is</p>
           <p className="text-white">Paulius Taraškevičius</p>
         </div>
         <MobileHeader />
       </div>
-      <div className="hidden lg:flex justify-between items-center w-full py-3">
+      <div className={cn("hidden lg:flex justify-between items-center w-full px-8 bg-transparent", className)}>
         <div className="flex flex-col gap-y-2">
           <p className="text-[#717171]">Quick Links</p>
           <div className="flex gap-3">

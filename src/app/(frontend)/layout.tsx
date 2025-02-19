@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from 'next/font/google'
 import './globals.css'
 import { Header } from '@/components/header'
 import { Wrapper } from '@/components/wrapper'
+import Hero from '@/components/hero'
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -31,7 +32,10 @@ export default function RootLayout({
         suppressHydrationWarning={true}
       >
         <Wrapper>
-          <Header />
+          <div>
+            <Hero className='relative'/>
+            <Header className='absolute top-0 left-0'/>
+          </div>
           <main>{children}</main>
         </Wrapper>
       </body>

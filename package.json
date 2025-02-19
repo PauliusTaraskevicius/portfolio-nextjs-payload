@@ -28,6 +28,7 @@
     "cross-env": "^7.0.3",
     "graphql": "^16.8.1",
     "lucide-react": "^0.472.0",
+    "motion": "^12.4.4",
     "next": "15.1.0",
     "payload": "latest",
     "react": "19.0.0",
