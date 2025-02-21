@@ -21,7 +21,7 @@ export default function Hero({ className }: HeroProps) {
           className="text-white text-7xl"
 
         >
-          Freelance Web
+          Freelance Web Developer
         </motion.span>
       </div>
     </div>
